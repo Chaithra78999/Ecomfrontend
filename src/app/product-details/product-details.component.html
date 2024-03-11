@@ -1,0 +1,36 @@
+
+<table class="table table responsive" style="background-color: gray; margin: auto;">
+    <thead class="table table-primary">
+        <tr>
+            <th>productId</th>
+            <th>productName</th>
+            <th>productDescription</th>
+            <th>productDiscountedPrice</th>
+            <th>productActualPrice</th>
+            <th>Add to Cart</th>
+        </tr>
+    
+    </thead>
+  
+    <tbody class="table table-striped">
+        <tr *ngFor = "let prouctD of ProductDel">
+            <td>{{prouctD.productId}}</td>
+            <td>{{prouctD.productName}}</td>
+            <td>{{prouctD.productDescription}}</td>
+            <td>{{prouctD.productDiscountedPrice}}</td>
+            <td>{{prouctD.productActualPrice}}</td>
+            <!-- <div><input type="text" name="productId" [(ngModel)]="productId"> -->
+                <!-- <h1>Your Cart</h1>
+<div *ngIf="getCart().length==0">No Books in your cart</div>
+<div *ngIf="getCart().length>0">
+    <div *ngFor="let book of getCart() ;let i=index;">
+        <p class="my-4 text-2xl">{{i+1}}.{{ book.name}}</p>
+    </div>
+</div> -->
+
+            <td> <button class="btn btn-primary" routerLink="addtocart/{{prouctD.productId}}" (click)="hello(prouctD.productId)">AddToCart</button> </td>
+      <!--</div>-->    
+    </tr>
+    </tbody>
+ 
+</table>

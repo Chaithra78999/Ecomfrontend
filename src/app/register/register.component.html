@@ -1,0 +1,63 @@
+
+
+
+
+
+
+<div >
+
+
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="col-md-8" >
+
+            <div class="card" width="30%">
+                <h2> Register Page</h2>
+
+                <form (ngSubmit)="save()">
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <label for="userName"> User Name <span style="color: red;">*</span></label>
+                            <input type="text" name="userName" class="form-control" [(ngModel)]="reg.userName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <label for="fName"> first Name <span style="color: red;">*</span></label>
+                            <input type="text" name="userFirstName" class="form-control"
+                                [(ngModel)]="reg.userFirstName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <label for="lName"> last Name <span style="color: red;">*</span></label>
+                            <input type="text" name="userLastName" class="form-control" [(ngModel)]="reg.userLastName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <label for="password"> password<span style="color: red;">*</span></label>
+                            <input type="password" name="userPassword" class="form-control"
+                                [(ngModel)]="reg.userPassword">
+                        </div>
+                    </div>
+
+                    
+
+                </form>
+
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <button class="btn btn-primary" type="submit" (click)="save()">Submit</button>
+                        <button style="margin-left: 20px;" class="btn btn-secondary" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

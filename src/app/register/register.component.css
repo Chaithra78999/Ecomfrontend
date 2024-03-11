@@ -1,0 +1,9 @@
+.background-container {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arrow.com%2F&psig=AOvVaw0QrwP9G9AjiEgrNKXI27d5&ust=1709546516428000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPiHzZzr14QDFQAAAAAdAAAAABAE');
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100vh; /* Adjust the height of the container as needed */
+}
+
+

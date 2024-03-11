@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="card" style="margin:auto;width: 40%;">
+        <div style="background-color: darkgray;">
+            <div class="card-body ">
+                <div *ngFor="let product of productDetails" class="product-details">
+                    <h2>{{ product.productId }}</h2>
+                    <h2>{{ product.productName }}</h2>
+                    <p>Description: {{ product.productDescription }}</p>
+                    <p>Discounted Price: {{ product.productDiscountedPrice |currency }}</p>
+                    <p>Actual Price: {{ product.productActualPrice | currency }}</p><hr>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <h1>{{productDetails.productName}}</h1>

@@ -1,0 +1,26 @@
+<!-- products.component.html -->
+
+
+
+
+
+<div class="card" >
+
+
+  <div *ngFor="let product of products" class="product-details">
+    <h2>{{ product.productName }}</h2>
+    <p>Description: {{ product.productDescription }}</p>
+    <p>Discounted Price: {{ product.productDiscountedPrice |currency }}</p>
+    <p>Actual Price: {{ product.productActualPrice | currency }}</p>
+    <!-- Add to Cart Button -->
+    <!-- <button (clickevent)="addToCart(product)">Add to Cart</button> -->
+    <div style="text-align: left;">
+      <button type="submit" routerLink="cart" class="btn btn-primary"  >add to Cart</button>
+      <!-- Remove from Cart Button -->
+    </div>
+  </div>
+</div>
+
+
+<button style=" margin-top: 30%; margin-left: 30%;" routerLink="cart">chaithra</button>
+
